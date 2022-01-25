@@ -1,0 +1,199 @@
+body {
+	font-family:'Montserrat', sans-serif;
+}
+
+header {
+	background:#BBBBBB;
+	padding:20px 0; 
+}
+
+.caixa{
+	position:relative;
+	width:940px;
+	margin:0 auto;
+}
+nav {
+	position:absolute;
+	right: 0px;
+	top:110px;
+}
+nav li {
+	display: inline-block;
+	margin:0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color:#000000;
+	font-weight: bold;
+	font-size:22px;
+	text-decoration: none;
+
+}
+
+nav a:hover {
+	color:#C78C19;
+	text-decoration:underline;
+}
+
+.titulo-principal{
+	padding-left: 20px;
+}
+
+.principal {
+	padding:30px;
+}
+
+.banner{
+	width:100%;
+}
+
+.titulo-principal{
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 1em;
+	text-align: center;
+	clear: left;
+
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+
+.principal {
+		padding:3em 0;
+		background-color:#FEFEFE;
+		width: 940px;
+		margin: 0 auto;
+}
+
+.principal p{
+	
+	margin:0 0 1em;
+
+
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style:italic;
+
+}
+
+#missao{
+	font-size: 20px;
+	font-style: italic;
+}	
+	
+
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align:center; 
+}
+
+
+.beneficios{
+	background: white;
+	padding:3em;
+	background: #888888;
+
+
+}
+
+
+
+.lista-beneficios {
+	display:inline-block;
+	vertical-align: top;
+	width:40%;
+	
+}
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:before {
+	content:"\272F";
+}
+
+.conteudo-beneficios {
+	width:640px;
+	margin: 0 auto;
+}
+
+.imagem-beneficios {
+	width: 60%;
+	transition:400ms;
+	box-shadow: 10px 10px 10px 0 black;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
+} /*é possível usar a propriedade de opacidade em qualquer elemento, até mesmo em cores*/
+
+
+.mapa {
+	padding:3em 0;
+	background: linear-gradient(#FEFEFEFE, #888888);
+}
+
+.mapa-conteudo {
+	margin: 0 auto;
+	width:940px;
+}
+
+.video {
+width:560px;
+margin: 2em auto;
+
+}
+
+
+footer {
+	text-align: center;
+	background:url("imagens/bg.jpg");
+	padding: 40px 0px;
+}
+
+.copyright {
+	color:white;
+	font-size:13px;
+	margin-top: 20px;
+
+}
+
+/*Adicionando responsividade*/
+/* fazer pergunas ao navegador a fim de saber informações sobre o dispositivo que está sendo usado na navegação*/
+/* sabendo da resolução do dispositivo, algumas tagas podem ser reescritas para substituir as originais*/
+/*media query*/
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align:center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficio, .imagem-beneficios {
+		width:100%;
+	}
+
+}
